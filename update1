@@ -901,7 +901,6 @@ Tab:AddButton({
   	end    
 })
 
-Tab:AddLabel("More coming soon!")
 
 
 local Section = Tab:AddSection({
@@ -954,7 +953,124 @@ Tab:AddButton({
 })
 
 
+Tab:AddButton({
+	Name = "Block Car [R6 Only]",
+	Callback = function()
+	    OrionLib:MakeNotification({
+	Name = "Necessary hats:",
+	Content = "Link copied to clipboard, https://pastebin.com/raw/tdch8JYU",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+	setclipboard(tostring('https://pastebin.com/raw/tdch8JYU'))    
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KRNL2/FEBlockcar/main/source', true))()
+  	end    
+})
 
+
+Tab:AddButton({
+	Name = "Among Us V3 [R6 Only]",
+	Callback = function()
+	    OrionLib:MakeNotification({
+	Name = "Necessary hats:",
+	Content = "Link copied to clipboard, https://pastebin.com/raw/3EJZEwhW",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+	setclipboard(tostring('https://pastebin.com/raw/3EJZEwhW'))     
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KRNL2/amongusv3/main/source', true))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Hammer Arm [R6 Only]",
+	Callback = function()
+	    OrionLib:MakeNotification({
+	Name = "Necessary hats:",
+	Content = "Link copied to clipboard, https://pastebin.com/raw/3fiV0N5s",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+	setclipboard(tostring('https://pastebin.com/raw/3fiV0N5s'))   
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KRNL2/hammerarm/main/source', true))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Flying Gunner [R6 Only]",
+	Callback = function()
+	    OrionLib:MakeNotification({
+	Name = "Necessary hats:",
+	Content = "Link copied to clipboard, https://pastebin.com/raw/LjY7qZSq",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+    setclipboard(tostring('https://pastebin.com/raw/LjY7qZSq')) 
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KRNL2/flyinggunner/main/source', true))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Block Hammer [R6 Only]",
+	Callback = function()
+	    OrionLib:MakeNotification({
+	Name = "Necessary hats:",
+	Content = "Link copied to clipboard, https://controlc.com/1becc5a1",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+	setclipboard(tostring('https://controlc.com/1becc5a1')) 
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KRNL2/Blockhammer/main/source', true))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Red Samurai [R6 Only]",
+	Callback = function()
+	    OrionLib:MakeNotification({
+	Name = "Necessary hat:",
+	Content = "Link copied to clipboard, https://pastebin.com/raw/B8F9HtwE",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+	setclipboard(tostring('https://pastebin.com/raw/B8F9HtwE'))
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/kakabok1233453/asdasda/main/Red%20Samurai'),true))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Minecart [R6 Only]",
+	Callback = function()
+	    OrionLib:MakeNotification({
+	Name = "Necessary hat:",
+	Content = "Link copied to clipboard, https://pastebin.com/raw/k7VcbXBi",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+	setclipboard(tostring('https://pastebin.com/raw/k7VcbXBi'))    
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/kakabok1233453/asdasda/main/Minecart'),true))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Snake [R6 Only]",
+	Callback = function()
+	    OrionLib:MakeNotification({
+	Name = "Necessary hats:",
+	Content = "Link copied to clipboard, https://pastebin.com/raw/Zqx7gxvJ",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+	setclipboard(tostring('https://pastebin.com/raw/Zqx7gxvJ'))   
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KRNL2/fesnake/main/source', true))()
+  	end    
+})
 
 
 
