@@ -1286,6 +1286,36 @@ Tab:AddButton({
 })
 
 
+Tab:AddButton({
+	Name = "Walking Cube V2 [R6 Only]",
+	Callback = function()
+	    OrionLib:MakeNotification({
+	Name = "Walking Cube V2",
+	Content = "Link copied to clipboard, https://www.roblox.com/catalog/5461538290/Sandwich-Costume",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+	setclipboard(tostring('https://www.roblox.com/catalog/5461538290/Sandwich-Costume'))    
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/KRNL2/FEWalkingCubeV2/main/source'),true))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Shotgun [R6 Only]",
+	Callback = function()
+	    OrionLib:MakeNotification({
+	Name = "Necessary hats:",
+	Content = "Link copied to clipboard, https://raw.githubusercontent.com/KRNL2/feshotgunhats/main/hats",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+	setclipboard(tostring('https://raw.githubusercontent.com/KRNL2/feshotgunhats/main/hats'))        
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/KRNL2/feshotgun/main/source'),true))()
+  	end    
+})
+
+
 ----------------------------------------------------------------------------------
 -- New Section --
 -- FE No Hats -- 
@@ -1420,7 +1450,7 @@ Tab:AddButton({
 
 
 Tab:AddButton({
-	Name = "Creepy Crawler",
+	Name = "Creepy Crawler [R6 Only]",
 	Callback = function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/KRNL2/-FeCreepyCrawler/main/anice'))()
   	end    
