@@ -1,8 +1,26 @@
+
+--███╗░░░███╗██████╗░██████╗░██╗░░░██╗██╗░░░░░██╗░░░░░███████╗██████╗░░█████╗░░██████╗░
+--████╗░████║██╔══██╗██╔══██╗██║░░░██║██║░░░░░██║░░░░░██╔════╝██╔══██╗██╔══██╗██╔════╝░
+--██╔████╔██║██████╔╝██████╦╝██║░░░██║██║░░░░░██║░░░░░█████╗░░██████╔╝██║░░██║██║░░██╗░
+--██║╚██╔╝██║██╔══██╗██╔══██╗██║░░░██║██║░░░░░██║░░░░░██╔══╝░░██╔══██╗██║░░██║██║░░╚██╗
+--██║░╚═╝░██║██║░░██║██████╦╝╚██████╔╝███████╗███████╗██║░░░░░██║░░██║╚█████╔╝╚██████╔╝
+--╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═════╝░░╚═════╝░╚══════╝╚══════╝╚═╝░░░░░╚═╝░░╚═╝░╚════╝░░╚═════╝░
+
+
+
+--[[
 -- Official Ultimate Universal Hub
+-- Retribution Hub
+-- This GUI/Hub was made by 3wnd#8995
+-- our discord server: https://discord.gg/f26Vp8CzaZ
+-- This Hub will receive updates. 
+-- Also if there are any bugs, please report the bug(s) in my discord server.
+]]
+
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Ultimate Universal Hub - FE ScriptHub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Retribution Hub - FE ScriptHub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 --[[
 Name = <string> - The name of the UI.
@@ -543,6 +561,11 @@ local Tab = Window:MakeTab({
 
 Tab:AddParagraph("Important!","All of these FE Scripts do require hats. The link to the hats will be copied to your clipboard once you click the button(s). If the script doesnt work make sure your wearing the right hats! Also use Synapse X to have better experience with these scripts. Some scripts dont work with free executors.")
 
+
+----------------------------------------------------------------------------------
+-- New Section --
+-- FE Event Hats --
+----------------------------------------------------------------------------------
 local Section = Tab:AddSection({
 	Name = "FE Event Hats"
 })
@@ -808,6 +831,40 @@ Tab:AddButton({
 })
 
 
+Tab:AddButton({
+	Name = "Rocket [R6 Only]",
+	Callback = function()
+	    OrionLib:MakeNotification({
+	Name = "Necessary hats:",
+	Content = "Link copied to clipboard, https://raw.githubusercontent.com/KRNL2/ferocket/main/hats",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+	setclipboard(tostring('https://raw.githubusercontent.com/KRNL2/ferocket/main/hats'))
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/KRNL2/ferockett/main/source"))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Giant Cube Man [R6 Only]",
+	Callback = function()
+    	    OrionLib:MakeNotification({
+	Name = "Necessary hats:",
+	Content = "Link copied to clipboard, https://raw.githubusercontent.com/KRNL2/giantcubeman/main/hats",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+    	setclipboard(tostring('https://raw.githubusercontent.com/KRNL2/giantcubeman/main/hats'))
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/KRNL2/giantcubemana/main/source"))()
+  	end    
+})
+
+
+----------------------------------------------------------------------------------
+-- New section --
+-- FE Free Hats --
+----------------------------------------------------------------------------------
 local Section = Tab:AddSection({
 	Name = "FE Free Hats"
 })
@@ -902,7 +959,10 @@ Tab:AddButton({
 })
 
 
-
+----------------------------------------------------------------------------------
+-- New section --
+-- FE Paid Hats--
+----------------------------------------------------------------------------------
 local Section = Tab:AddSection({
 	Name = "FE Paid Hats"
 })
@@ -1071,6 +1131,303 @@ Tab:AddButton({
     loadstring(game:HttpGet('https://raw.githubusercontent.com/KRNL2/fesnake/main/source', true))()
   	end    
 })
+
+
+Tab:AddButton({
+	Name = "Road Rogue [R6 Only]",
+	Callback = function()
+	    OrionLib:MakeNotification({
+	Name = "Necessary hats:",
+	Content = "Link copied to clipboard, https://pastebin.com/raw/Leh4NSzr",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+    setclipboard(tostring('https://pastebin.com/raw/Leh4NSzr')) 	    
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KRNL2/roadrogue/main/source', true))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Propeller [R6 Only]",
+	Callback = function()
+	    OrionLib:MakeNotification({
+	Name = "Necessary hats:",
+	Content = "Link copied to clipboard, https://pastebin.com/raw/BWhBkH54",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+    setclipboard(tostring('https://pastebin.com/raw/BWhBkH54'))	    
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KRNL2/propellerman/main/source', true))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Cop [R6 Only]",
+	Callback = function()
+	OrionLib:MakeNotification({
+	Name = "Necessary hats:",
+	Content = "Link copied to clipboard, https://pastebin.com/raw/JySNEdjA",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+	setclipboard(tostring('https://pastebin.com/raw/JySNEdjA'))    
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KRNL2/fecop/main/source', true))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Achromatic Glitcher [R6 Only]",
+	Callback = function()
+	    OrionLib:MakeNotification({
+	Name = "Necessary hats:",
+	Content = "Link copied to clipboard, https://pastebin.com/raw/8hNKnjq1",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+    setclipboard(tostring('https://pastebin.com/raw/8hNKnjq1'))
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KRNL2/feglitcher/main/source', true))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Popcat [R6 Only]",
+	Callback = function()
+	    OrionLib:MakeNotification({
+	Name = "Necessary hats:",
+	Content = "Link copied to clipboard, https://pastebin.com/raw/V6r6YR5q",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+    setclipboard(tostring('https://pastebin.com/raw/V6r6YR5q'))	    
+    --[[
+Made By Ice & Fire
+Discord: Ice & Fire#0001
+Roblox: 09Ice_Fire09
+
+The Pop Cat!
+
+Controls:
+e= sit, q= pop
+r= wave
+t= punch
+f= idk
+g= punch from black
+z= yes
+x= no
+
+Hats:
+https://www.roblox.com/catalog/6380246734/Pop-Cat
+https://www.roblox.com/catalog/6065706256/Pop-Cat-Hoodie
+https://www.roblox.com/catalog/8337370/Blockhead-Baseball-Cap
+https://www.roblox.com/catalog/48474313/Red-Roblox-Cap
+https://www.roblox.com/catalog/48474294/ROBLOX-Girl-Hair
+https://www.roblox.com/catalog/62724852/Chestnut-Bun
+https://www.roblox.com/catalog/451220849/Lavender-Updo
+https://www.roblox.com/catalog/62234425/Brown-Hair
+Cost: 133 Bobux
+
+Made By Ice & Fire
+Discord: Ice & Fire#0001
+Roblox: 09Ice_Fire09
+]]
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/hacker123454/x/main/Pop_Cat.txt'),true))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Jeep [R6 Only]",
+	Callback = function()
+	    OrionLib:MakeNotification({
+	Name = "Necessary hat:",
+	Content = "Link copied to clipboard, https://www.roblox.com/catalog/9666085843/DESERT-BEEP",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+    setclipboard(tostring('https://www.roblox.com/catalog/9666085843/DESERT-BEEP'))	
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/KRNL2/jeepdarkeccentric/main/source'),true))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Baseball Bat [R6 Only]",
+	Callback = function()
+	   OrionLib:MakeNotification({
+	Name = "Necessary hat:",
+	Content = "Link copied to clipboard, https://www.roblox.com/catalog/7063113820/Aluminium-Baseball-Bat",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+	setclipboard(tostring('https://www.roblox.com/catalog/7063113820/Aluminium-Baseball-Bat'))
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/KRNL2/baseballbatfe/main/source'),true))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Winged Gunner [R6 Only]",
+	Callback = function()
+	   OrionLib:MakeNotification({
+	Name = "Necessary hat:",
+	Content = "Link copied to clipboard, https://raw.githubusercontent.com/KRNL2/hatsforwingedgunner/main/hats",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+	setclipboard(tostring('https://raw.githubusercontent.com/KRNL2/hatsforwingedgunner/main/hats'))
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/KRNL2/wingedgunner/main/source'),true))()
+  	end    
+})
+
+
+----------------------------------------------------------------------------------
+-- New Section --
+-- FE No Hats -- 
+----------------------------------------------------------------------------------
+local Section = Tab:AddSection({
+	Name = "FE No Hats"
+})
+
+
+Tab:AddButton({
+	Name = "Small Avatar V2 [R15 Only] [Scale]",
+	Callback = function()
+	    OrionLib:MakeNotification({
+	Name = "Scale:",
+	Content = "Link copied to clipboard, https://raw.githubusercontent.com/KRNL2/smallavatarscale/main/source",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+	setclipboard(tostring('https://raw.githubusercontent.com/KRNL2/smallavatarscale/main/source')) 
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KRNL2/smallavatarv2/main/source', true))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Titan [R15 Only] [Scale]",
+	Callback = function()
+	    OrionLib:MakeNotification({
+	Name = "Scale:",
+	Content = "Link copied to clipboard, https://github.com/KRNL2/bodytype/blob/main/titan",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+	setclipboard(tostring('https://github.com/KRNL2/bodytype/blob/main/titan'))    
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KRNL2/fesizechanger/main/titan', true))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Winged Human [R6 Only]",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/KRNL2/fewinged/main/human"))()	
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Dog [R6 Only]",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/KRNL2/fedog/main/animation"))();
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Huge Leg [R15 Only]",
+	Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/DigitalityScripts/roblox-scripts/main/Leg%20Resize'))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Ragdoll Death [R6 Only]",
+	Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KRNL2/ragdolldeath/main/source'))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Walk on Walls [R6 & R15]",
+	Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Invisibility [R15 Only]",
+	Callback = function()
+    local removeNametags = false -- remove custom billboardgui nametags from hrp, could trigger anticheat
+
+local plr = game:GetService("Players").LocalPlayer
+local character = plr.Character
+local hrp = character.HumanoidRootPart
+local old = hrp.CFrame
+
+if not character:FindFirstChild("LowerTorso") or character.PrimaryPart ~= hrp then
+return print("unsupported")
+end
+
+if removeNametags then
+local tag = hrp:FindFirstChildOfClass("BillboardGui")
+if tag then tag:Destroy() end
+
+hrp.ChildAdded:Connect(function(item)
+if item:IsA("BillboardGui") then
+task.wait()
+item:Destroy()
+end
+end)
+end
+
+local newroot = character.LowerTorso.Root:Clone()
+hrp.Parent = workspace
+character.PrimaryPart = hrp
+character:MoveTo(Vector3.new(old.X,9e9,old.Z))
+hrp.Parent = character
+task.wait(0.5)
+newroot.Parent = hrp
+hrp.CFrame = old
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Mouse Fling [R6 Only]",
+	Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KRNL2/mousefling/main/source'))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Winged Master [R6 Only]",
+	Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KRNL2/wingedmaster/main/source'))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Creepy Crawler",
+	Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KRNL2/-FeCreepyCrawler/main/anice'))()
+  	end    
+})
+
+
+
 
 
 
