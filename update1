@@ -1442,14 +1442,6 @@ Tab:AddButton({
 
 
 Tab:AddButton({
-	Name = "Winged Master [R6 Only]",
-	Callback = function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/KRNL2/wingedmaster/main/source'))()
-  	end    
-})
-
-
-Tab:AddButton({
 	Name = "Creepy Crawler [R6 Only]",
 	Callback = function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/KRNL2/-FeCreepyCrawler/main/anice'))()
@@ -1459,14 +1451,8 @@ Tab:AddButton({
 
 
 
-
-
-
-
-
-
-
-
+-- New Tab --
+-- Animations --
 local Tab = Window:MakeTab({
 	Name = "Animations",
 	Icon = "rbxassetid://4483345998",
@@ -1476,4 +1462,36 @@ local Tab = Window:MakeTab({
 
 local Section = Tab:AddSection({
 	Name = "R6 Animations"
+})
+
+
+Tab:AddButton({
+	Name = "Winged Master [R6 Only]",
+	Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KRNL2/wingedmaster/main/source'))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Parkour V2 [R6 Only]",
+	Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KRNL2/parkourv2/main/source'))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Default [R6 Only]",
+	Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KRNL2/defaultdance/main/source'))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Da Feets [R6 Only]",
+	Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KRNL2/dafeets/main/source'))()
+  	end    
 })
