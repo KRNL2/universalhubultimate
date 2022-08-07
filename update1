@@ -1837,3 +1837,5 @@ Tab:AddButton({
 
 
 Tab:AddParagraph("UI Library","Huge thanks to Orion for the UI Library")
+
+OrionLib:Init()
