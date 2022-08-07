@@ -10,7 +10,7 @@
 
 --[[
 -- Official Ultimate Universal Hub
--- Retribution Hub
+-- Equinox Hub
 -- This GUI/Hub was made by 3wnd#8995
 -- our discord server: https://discord.gg/f26Vp8CzaZ
 -- This Hub will receive updates. 
@@ -20,7 +20,7 @@
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Retribution Hub - FE ScriptHub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Equinox Hub - FE ScriptHub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 --[[
 Name = <string> - The name of the UI.
@@ -51,7 +51,7 @@ Tab:AddSlider({
 	Min = 0,
 	Max = 500,
 	Default = 16,
-	Color = Color3.fromRGB(0,255,0),
+	Color = Color3.fromRGB(69,48,52),
 	Increment = 1,
 	ValueName = "WalkSpeed",
 	Callback = function(s)
@@ -65,7 +65,7 @@ Tab:AddSlider({
 	Min = 0,
 	Max = 500,
 	Default = 50,
-	Color = Color3.fromRGB(0,255,0),
+	Color = Color3.fromRGB(168,175,150),
 	Increment = 1,
 	ValueName = "Jump Power",
 	Callback = function(t)
@@ -79,7 +79,7 @@ Tab:AddSlider({
 	Min = 0,
 	Max = 24,
 	Default = 14,
-	Color = Color3.fromRGB(0,255,0),
+	Color = Color3.fromRGB(218,134,66),
 	Increment = 1,
 	ValueName = "Time",
 	Callback = function(p)
@@ -93,7 +93,7 @@ Tab:AddSlider({
 	Min = 0,
 	Max = 500,
 	Default = 196.2,
-	Color = Color3.fromRGB(0,255,0),
+	Color = Color3.fromRGB(248,193,104),
 	Increment = 1,
 	ValueName = "Gravity",
 	Callback = function(o)
@@ -105,7 +105,12 @@ Tab:AddSlider({
 Tab:AddButton({
 	Name = "Respawn",
 	Callback = function()
-	    game:GetService("Workspace").LocalPlayer.Humanoid.Health = 0
+	    game.Players.LocalPlayer.Character.Head:Destroy()
+if game.Players.LocalPlayer.Character.Humanoid.Health < 5 then 
+    local deathmanok = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").position
+    wait(1.5)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(deathmanok)
+end
 end})
 
 Tab:AddButton({
@@ -861,6 +866,26 @@ Tab:AddButton({
 })
 
 
+Tab:AddButton({
+	Name = "Hoverskater [R6 Only]",
+	Callback = function()
+	    OrionLib:MakeNotification({
+	Name = "Necessary hats:",
+	Content = "Link copied to clipboard, https://pastebin.com/raw/qXa2jMnL",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+    setclipboard(tostring('https://pastebin.com/raw/qXa2jMnL'))
+    --Fe blue flame hoverboard
+--https://www.roblox.com/catalog/6470135113/Fan-Hand-Sign-Why-Dont-We-WDW
+--https://www.roblox.com/catalog/9560383533/Blue-Flame-Robo-Samurai
+--[GET THIS HAT BEFORE JULY 8TH]
+
+loadstring(game:HttpGet(('https://pastebin.com/raw/U2VHEdFB'),true))()
+  	end    
+})
+
+
 ----------------------------------------------------------------------------------
 -- New section --
 -- FE Free Hats --
@@ -1195,6 +1220,21 @@ Tab:AddButton({
 
 
 Tab:AddButton({
+	Name = "Void Boss [R6 Only]",
+	Callback = function()
+	    OrionLib:MakeNotification({
+	Name = "Necessary hats:",
+	Content = "Link copied to clipboard, https://pastebin.com/raw/4zNuAnzL",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+    setclipboard(tostring('https://pastebin.com/raw/4zNuAnzL'))
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KRNL2/voidboss/main/source', true))()	
+  	end    
+})
+
+
+Tab:AddButton({
 	Name = "Popcat [R6 Only]",
 	Callback = function()
 	    OrionLib:MakeNotification({
@@ -1312,6 +1352,21 @@ Tab:AddButton({
 })
 	setclipboard(tostring('https://raw.githubusercontent.com/KRNL2/feshotgunhats/main/hats'))        
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/KRNL2/feshotgun/main/source'),true))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Sheep [R6 Only]",
+	Callback = function()
+	    OrionLib:MakeNotification({
+	Name = "Necessary hats:",
+	Content = "Link copied to clipboard, https://pastebin.com/raw/j9B201MY",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+	setclipboard(tostring('https://pastebin.com/raw/j9B201MY'))   
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/KRNL2/fesheep/main/source'),true))()
   	end    
 })
 
@@ -1497,6 +1552,63 @@ Tab:AddButton({
 })
 
 
+Tab:AddButton({
+	Name = "Rickroll [R6 Only]",
+	Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KRNL2/rickroll/main/source', true))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Human Car [R6 Only]",
+	Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/KRNL2/humancar/main/source', true))()
+  	end    
+})
+
+
+local Section = Tab:AddSection({
+	Name = "R15 Animations"
+})
+
+
+Tab:AddButton({
+	Name = "Breakdance [R15 Only]",
+	Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KRNL2/r15breakdance/main/source', true))()
+  	end    
+})
+
+
+local Section = Tab:AddSection({
+	Name = "R15 & R6 Animations"
+})
+
+
+Tab:AddButton({
+	Name = "Fly [R15 & R6]",
+	Callback = function()
+    
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "FrontFlip & BackFlip [R15 & R6]",
+	Callback = function()
+    
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Hamster Ball [R15 & R6]",
+	Callback = function()
+    
+  	end    
+})
+
 
 
 -- New Tab --
@@ -1514,7 +1626,7 @@ local Section = Tab:AddSection({
 
 
 Tab:AddButton({
-	Name "Infinite Yield",
+	Name = "Infinite Yield",
 	Callback = function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
   	end    
@@ -1551,3 +1663,163 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
   	end    
 })
+
+
+-- [[
+-- Game Hubs --
+-- This is where guis/hubs will be put here.
+--]]
+
+local Tab = Window:MakeTab({
+	Name = "Game Hubs",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+-- Mining Simulator 2 section --
+local Section = Tab:AddSection({
+	Name = "Mining Simulator 2"
+})
+
+
+Tab:AddButton({
+	Name = "Mining Simulator 2",
+	Callback = function()
+    loadstring(game:HttpGet'https://raw.githubusercontent.com/RunDTM/miningsim2/main/rewrite.lua')()
+  	end    
+})
+
+-- Da hood section -- 
+local Section = Tab:AddSection({
+	Name = "Da Hood"
+})
+
+
+Tab:AddButton({
+	Name = "Dimag16's GUI",
+	Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Dimag16/DimagX_NEW/main/dimagx', true))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Enclosed's GUI",
+	Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Pvpahh/enclosed/main/enclosed'))()
+ 
+--discord.gg/uucHz2d3
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "SpaceX",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/spacexrandom/Lua/main/DaHood",true))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Vortex's GUI",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ImagineProUser/vortexdahood/main/vortex", true))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Da Hub",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NoUGotbannedlol/DaHubV3/main/Launch"))()
+  	end    
+})
+
+
+-- Ragdoll Engine section --
+local Section = Tab:AddSection({
+	Name = "Ragdoll Engine"
+})
+
+
+Tab:AddButton({
+	Name = "Cryptonic Hub",
+	Callback = function()
+    --[[ 
+Huge props to https://v3rmillion.net/member.php?action=profile&uid=1052423 [dawid] for the UI Lib
+script made by martiin#0015, wmw#7622 and demvkrao#0069
+--]]
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/martinelcrac/cryptonichub/main/Ragdollengine.lua'))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Malware V2",
+	Callback = function()
+    loadstring(game:HttpGet('https://gist.githubusercontent.com/H20CalibreYT/462f6e6236a9371130f113def6549bb1/raw/'))()
+  	end    
+})
+
+
+-- Cant say the word section --
+local Section = Tab:AddSection({
+	Name = "Cant Say the Word"
+})
+
+
+Tab:AddButton({
+	Name = "Cant Say the Word GUI",
+	Callback = function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/KRNL2/CantSayTheWordScript/main/fe")))()
+  	end    
+})
+
+
+-- Pet Simulator X section --
+local Section = Tab:AddSection({
+	Name = "Pet Simulator X"
+})
+
+
+Tab:AddButton({
+	Name = "Project Meow",
+	Callback = function()
+    loadstring(game:HttpGet("https://www.scriptblox.com/raw/Project-Meow_421"))()
+  	end    
+})
+
+Tab:AddLabel("More coming soon!")
+
+
+-- Credits tab -- 
+local Tab = Window:MakeTab({
+	Name = "Credits",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+local Section = Tab:AddSection({
+	Name = "Credits"
+})
+
+
+Tab:AddParagraph("Owner","Equinox Hub was made by Mr_BullFrog")
+Tab:AddButton({
+	Name = "Click to copy discord Invite",
+	Callback = function()
+    OrionLib:MakeNotification({
+	Name = "Link copied",
+	Content = "Discord Invite copied to clipboard.",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+    setclipboard(tostring('https://discord.gg/f26Vp8CzaZ')) 
+  	end    
+})
+
+
+Tab:AddParagraph("UI Library","Huge thanks to Orion for the UI Library")
