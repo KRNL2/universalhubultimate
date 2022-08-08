@@ -595,6 +595,16 @@ Tab:AddButton({
 })
 
 
+Tab:AddButton({
+	Name = "Blizzard Beast Mode [R15 & R6]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    chr.Head.face.Texture = "rbxassetid://209712379"
+  	end    
+})
+
+
 
 
 -- Hats section --
