@@ -2512,7 +2512,7 @@ Tab:AddButton({
 
 
 Tab:AddButton({
-	Name = "Autofarm #2",
+	Name = "Autofarm #2 [NW]",
 	Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/rapnz/scripts/master/DaHoodFarm.lua"))()
   	end    
