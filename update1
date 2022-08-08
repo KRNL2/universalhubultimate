@@ -467,7 +467,7 @@ end
 
 
 Tab:AddButton({
-	Name = "Rainbow Left Arm [R15 & R6]",
+	Name = "Rainbow Left Arm [R15 Only]",
 	Callback = function()
     -- Left Arm
     local ply = game.Players.LocalPlayer
@@ -481,7 +481,7 @@ end
 
 
 Tab:AddButton({
-	Name = "Rainbow Right Arm [R15 & R6]",
+	Name = "Rainbow Right Arm [R15 Only]",
 	Callback = function()
     -- Right Arm
     local ply = game.Players.LocalPlayer
@@ -495,7 +495,7 @@ end
 
 
 Tab:AddButton({
-	Name = "Rainbow Torso [R15 & R6]",
+	Name = "Rainbow Torso [R15 Only]",
 	Callback = function()
     -- Right Leg
     local ply = game.Players.LocalPlayer
@@ -509,7 +509,7 @@ end
 
 
 Tab:AddButton({
-	Name = "Rainbow Left Leg [R15 & R6]",
+	Name = "Rainbow Left Leg [R15 Only]",
 	Callback = function()
     -- Left Leg
     local ply = game.Players.LocalPlayer
@@ -523,7 +523,7 @@ end
 
 
 Tab:AddButton({
-	Name = "Rainbow Right Leg [R15 & R6]",
+	Name = "Rainbow Right Leg [R15 Only]",
 	Callback = function()
     -- Right Leg
     local ply = game.Players.LocalPlayer
