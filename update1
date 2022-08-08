@@ -359,6 +359,92 @@ Tab:AddButton({
 })
 
 
+local Section = Tab:AddSection({
+	Name = "Faces"
+})
+
+
+Tab:AddButton({
+	Name = "Red Beast Mode [R15 & R6]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    chr.Head.face.Texture = "rbxassetid://129003756" 		
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Playful Vampire [R15 & R6]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    chr.Head.face.Texture = "rbxassetid://6779437898" 		
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Super Super Happy Face [R15 & R6]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    chr.Head.face.Texture = "rbxassetid://6779442089"
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Yum! [R15 & R6]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    chr.Head.face.Texture = "rbxassetid://6779401729"
+  	end    
+})
+
+
+
+Tab:AddButton({
+	Name = "Red Glowing Eyes [R15 & R6]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    chr.Head.face.Texture = "rbxassetid://6779462397"
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Prankster [R15 & R6]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    chr.Head.face.Texture = "rbxassetid://20196231"
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "ROBLOX Madness [R15 & R6]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    chr.Head.face.Texture = "rbxassetid://479872791"
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "The Dog Whisper [R15 & R6]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    chr.Head.face.Texture = "rbxassetid://34764373"
+  	end    
+})
+
+
 local Tab = Window:MakeTab({
 	Name = "Hubs and GUIs",
 	Icon = "rbxassetid://4483345998",
