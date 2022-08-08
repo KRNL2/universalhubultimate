@@ -445,6 +445,98 @@ Tab:AddButton({
 })
 
 
+-- The rainbow body parts section --
+-- This section changes your body parts color to rainbow. --
+local Section = Tab:AddSection({
+	Name = "Rainbow Body Parts"
+})
+
+
+Tab:AddButton({
+	Name = "Rainbow Head [R15 & R6]",
+	Callback = function()
+    -- Head
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    local Head = chr.Head
+    while wait(0.1) do 
+	Head.BrickColor = BrickColor.random() 
+end
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Rainbow Left Arm [R15 & R6]",
+	Callback = function()
+    -- Left Arm
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    local LeftUpperArm = chr.LeftUpperArm
+    while wait(0.1) do 
+	LeftUpperArm.BrickColor = BrickColor.random() 
+end
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Rainbow Right Arm [R15 & R6]",
+	Callback = function()
+    -- Right Arm
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    local RightUpperArm = chr.RightUpperArm
+    while wait(0.1) do 
+	RightUpperArm.BrickColor = BrickColor.random() 
+end
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Rainbow Torso [R15 & R6]",
+	Callback = function()
+    -- Right Leg
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    local UpperTorso = chr.UpperTorso
+    while wait(0.1) do 
+	UpperTorso.BrickColor = BrickColor.random() 
+end
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Rainbow Left Leg [R15 & R6]",
+	Callback = function()
+    -- Left Leg
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    local LeftUpperLeg = chr.LeftUpperLeg
+    while wait(0.1) do 
+	LeftUpperLeg.BrickColor = BrickColor.random() 
+end
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Rainbow Right Leg [R15 & R6]",
+	Callback = function()
+    -- Right Leg
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    local RightUpperLeg = chr.RightUpperLeg
+    while wait(0.1) do 
+	RightUpperLeg.BrickColor = BrickColor.random() 
+end
+  	end    
+})
+
+
+
 local Tab = Window:MakeTab({
 	Name = "Hubs and GUIs",
 	Icon = "rbxassetid://4483345998",
