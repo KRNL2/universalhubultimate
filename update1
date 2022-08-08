@@ -495,7 +495,7 @@ end
 
 
 Tab:AddButton({
-	Name = "Rainbow Torso [R15 Only]",
+	Name = "Rainbow Torso [R15 & R6]",
 	Callback = function()
     -- Right Leg
     local ply = game.Players.LocalPlayer
