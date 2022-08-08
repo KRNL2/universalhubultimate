@@ -2503,6 +2503,30 @@ Tab:AddButton({
 })
 
 
+Tab:AddButton({
+	Name = "Lora X (Autofarm)",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/KRNL2/dahoodautofarm/main/source"))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Autofarm #2",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/rapnz/scripts/master/DaHoodFarm.lua"))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Autofarm GUI",
+	Callback = function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/JsfuayASbsfuWGakCmhzVwaKJsfuayASbsfuWGa/EternalJNshAIw-mpaAkw-VkbgA/main/eternal.lua')))()
+  	end    
+})
+
+
 -- Ragdoll Engine section --
 local Section = Tab:AddSection({
 	Name = "Ragdoll Engine"
@@ -2556,6 +2580,7 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://www.scriptblox.com/raw/Project-Meow_421"))()
   	end    
 })
+
 
 Tab:AddLabel("More coming soon!")
 
