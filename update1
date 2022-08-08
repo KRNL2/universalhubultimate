@@ -605,6 +605,16 @@ Tab:AddButton({
 })
 
 
+Tab:AddButton({
+	Name = "Tattletale [R15 & R6]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    chr.Head.face.Texture = "rbxassetid://26343132"
+  	end    
+})
+
+
 
 
 -- Hats section --
