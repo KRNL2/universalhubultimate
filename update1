@@ -420,7 +420,7 @@ Tab:AddButton({
 	Callback = function()
     local ply = game.Players.LocalPlayer
     local chr = ply.Character
-    chr.Head.face.Texture = "rbxassetid://20196231"
+    chr.Head.face.Texture = "rbxassetid://20052028"
   	end    
 })
 
@@ -444,6 +444,324 @@ Tab:AddButton({
   	end    
 })
 
+
+Tab:AddButton({
+	Name = "Evil Skeptic [R15 & R6]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    chr.Head.face.Texture = "rbxassetid://110287983"
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Red Tango [R15 & R6]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    chr.Head.face.Texture = "rbxassetid://629930519"
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Angelic [R15 & R6]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    chr.Head.face.Texture = "rbxassetid://45083898"
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Green Glowing Eyes [R15 & R6]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    chr.Head.face.Texture = "rbxassetid://398676207"
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Troublemaker [R15 & R6]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    chr.Head.face.Texture = "rbxassetid://22920500"
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Paintball Enthusiast [R15 & R6]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    chr.Head.face.Texture = "rbxassetid://23310996"
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Grandma's Lipstick [R15 & R6]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    chr.Head.face.Texture = "rbxassetid://51241479"
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Facepalm [R15 & R6]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    chr.Head.face.Texture = "rbxassetid://30394593"
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Country Morning [R15 & R6]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    chr.Head.face.Texture = "rbxassetid://51241521"
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Optimist [R15 & R6]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    chr.Head.face.Texture = "rbxassetid://21024598"
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Camoface [R15 & R6]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    chr.Head.face.Texture = "rbxassetid://24441824"
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Bandage [R15 & R6]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    chr.Head.face.Texture = "rbxassetid://20418584"
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Silver Punk Face [R15 & R6]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    chr.Head.face.Texture = "rbxassetid://387256104"
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Green Whatchoo Talkin' Bout [R15 & R6]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    chr.Head.face.Texture = "rbxassetid://629936597"
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Red RAWR [R15 & R6]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    chr.Head.face.Texture = "rbxassetid://66329788"
+  	end    
+})
+
+
+
+
+-- Hats section --
+-- Here there will be limited hats such as the dominus. & there will maybe have also hairs. --
+local Section = Tab:AddSection({
+	Name = "Hats"
+})
+
+
+Tab:AddButton({
+	Name = "Dominus Empyreus [R6 Only]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer         
+    local chr = ply.Character
+    chr.Head.Mesh.MeshId = "21057410"
+    chr.Head.Transparency = "0"         
+    chr.Head.Mesh.MeshId = "http://www.roblox.com/asset/?id=21057410"
+    chr.Head.Mesh.TextureId = "http://www.roblox.com/asset/?id=21057378"
+    chr.Head.Mesh.TextureID = "http://www.roblox.com/asset/?id=21057378"
+    chr.Head.Mesh.MeshId = "21057410"
+    chr.Head.Transparency = "0"
+    end  
+})
+
+
+Tab:AddButton({
+	Name = "Dominus Frigidus [R6 Only]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer         
+    local chr = ply.Character
+    chr.Head.Mesh.MeshId = "21057410"
+    chr.Head.Transparency = "0"         
+    chr.Head.Mesh.MeshId = "http://www.roblox.com/asset/?id=21057410"
+    chr.Head.Mesh.TextureId = "http://www.roblox.com/asset/?id=48544900"
+    chr.Head.Mesh.TextureID = "http://www.roblox.com/asset/?id=48544900"
+    chr.Head.Mesh.MeshId = "21057410"
+    chr.Head.Transparency = "0"
+    end
+})
+
+
+Tab:AddButton({
+	Name = "Dominus Infernus [R6 Only]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer         
+    local chr = ply.Character
+    chr.Head.Mesh.MeshId = "21057410"
+    chr.Head.Transparency = "0"         
+    chr.Head.Mesh.MeshId = "http://www.roblox.com/asset/?id=21057410"
+    chr.Head.Mesh.TextureId = "http://www.roblox.com/asset/?id=31100020"
+    chr.Head.Mesh.TextureID = "http://www.roblox.com/asset/?id=31100020"
+    chr.Head.Mesh.MeshId = "21057410"
+    chr.Head.Transparency = "0"
+    end
+})
+
+
+Tab:AddButton({
+	Name = "Dominus Rex [R6 Only]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer         
+    local chr = ply.Character
+    chr.Head.Mesh.MeshId = "21057410"
+    chr.Head.Transparency = "0"         
+    chr.Head.Mesh.MeshId = "http://www.roblox.com/asset/?id=21057410"
+    chr.Head.Mesh.TextureId = "http://www.roblox.com/asset/?id=250577405"
+    chr.Head.Mesh.TextureID = "http://www.roblox.com/asset/?id=250577405"
+    chr.Head.Mesh.MeshId = "21057410"
+    chr.Head.Transparency = "0"
+    end
+})
+
+
+Tab:AddButton({
+	Name = "Dominus Formidulosus [R6 Only]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer         
+    local chr = ply.Character
+    chr.Head.Mesh.MeshId = "4255041974"
+    chr.Head.Transparency = "0"         
+    chr.Head.Mesh.MeshId = "http://www.roblox.com/asset/?id=4255041974"
+    chr.Head.Mesh.TextureId = "http://www.roblox.com/asset/?id=4255060163"
+    chr.Head.Mesh.TextureID = "http://www.roblox.com/asset/?id=4255060163"
+    chr.Head.Mesh.MeshId = "4255041974"
+    chr.Head.Transparency = "0"
+    end
+})
+
+
+Tab:AddButton({
+	Name = "Dominus Praefectus [R6 Only]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer         
+    local chr = ply.Character
+    chr.Head.Mesh.MeshId = "527245069"
+    chr.Head.Transparency = "0"         
+    chr.Head.Mesh.MeshId = "http://www.roblox.com/asset/?id=527245069"
+    chr.Head.Mesh.TextureId = "http://www.roblox.com/asset/?id=527244862"
+    chr.Head.Mesh.TextureID = "http://www.roblox.com/asset/?id=527244862"
+    chr.Head.Mesh.MeshId = "527245069"
+    chr.Head.Transparency = "0"
+    end
+})
+
+
+Tab:AddButton({
+	Name = "Dominus Aureus [R6 Only]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer         
+    local chr = ply.Character
+    chr.Head.Mesh.MeshId = "138923368"
+    chr.Head.Transparency = "0"         
+    chr.Head.Mesh.MeshId = "http://www.roblox.com/asset/?id=138923368"
+    chr.Head.Mesh.TextureId = "http://www.roblox.com/asset/?id=139138503"
+    chr.Head.Mesh.TextureID = "http://www.roblox.com/asset/?id=139138503"
+    chr.Head.Mesh.MeshId = "138923368"
+    chr.Head.Transparency = "0"
+    end
+})
+
+
+Tab:AddButton({
+	Name = "Dominus Messor [R6 Only]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer         
+    local chr = ply.Character
+    chr.Head.Mesh.MeshId = "21057410"
+    chr.Head.Transparency = "0"         
+    chr.Head.Mesh.MeshId = "http://www.roblox.com/asset/?id=21057410"
+    chr.Head.Mesh.TextureId = "http://www.roblox.com/asset/?id=64444605"
+    chr.Head.Mesh.TextureID = "http://www.roblox.com/asset/?id=64444605"
+    chr.Head.Mesh.MeshId = "21057410"
+    chr.Head.Transparency = "0"
+    end
+})
+
+
+Tab:AddButton({
+	Name = "Dominus Vespertilio [R6 Only]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer         
+    local chr = ply.Character
+    chr.Head.Mesh.MeshId = "96102993"
+    chr.Head.Transparency = "0"         
+    chr.Head.Mesh.MeshId = "http://www.roblox.com/asset/?id=96102993"
+    chr.Head.Mesh.TextureId = "http://www.roblox.com/asset/?id=96103063"
+    chr.Head.Mesh.TextureID = "http://www.roblox.com/asset/?id=96103063"
+    chr.Head.Mesh.MeshId = "96102993"
+    chr.Head.Transparency = "0"
+    end
+})
+
+
+Tab:AddButton({
+	Name = "Dominus Astra [R6 Only]",
+	Callback = function()
+    local ply = game.Players.LocalPlayer         
+    local chr = ply.Character
+    chr.Head.Mesh.MeshId = "162384581"
+    chr.Head.Transparency = "0"         
+    chr.Head.Mesh.MeshId = "http://www.roblox.com/asset/?id=162384581"
+    chr.Head.Mesh.TextureId = "http://www.roblox.com/asset/?id=162384608"
+    chr.Head.Mesh.TextureID = "http://www.roblox.com/asset/?id=162384608"
+    chr.Head.Mesh.MeshId = "162384581"
+    chr.Head.Transparency = "0"
+    end
+})
 
 -- The rainbow body parts section --
 -- This section changes your body parts color to rainbow. --
