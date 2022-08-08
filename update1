@@ -1,10 +1,12 @@
 
+-- [[
 --███╗░░░███╗██████╗░██████╗░██╗░░░██╗██╗░░░░░██╗░░░░░███████╗██████╗░░█████╗░░██████╗░
 --████╗░████║██╔══██╗██╔══██╗██║░░░██║██║░░░░░██║░░░░░██╔════╝██╔══██╗██╔══██╗██╔════╝░
 --██╔████╔██║██████╔╝██████╦╝██║░░░██║██║░░░░░██║░░░░░█████╗░░██████╔╝██║░░██║██║░░██╗░
 --██║╚██╔╝██║██╔══██╗██╔══██╗██║░░░██║██║░░░░░██║░░░░░██╔══╝░░██╔══██╗██║░░██║██║░░╚██╗
 --██║░╚═╝░██║██║░░██║██████╦╝╚██████╔╝███████╗███████╗██║░░░░░██║░░██║╚█████╔╝╚██████╔╝
 --╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═════╝░░╚═════╝░╚══════╝╚══════╝╚═╝░░░░░╚═╝░░╚═╝░╚════╝░░╚═════╝░
+--]]
 
 
 
@@ -192,6 +194,17 @@ Tab:AddButton({
 	Callback = function()
     	local noclip = true char = game.Players.LocalPlayer.Character while true do if noclip == true then for _,v in pairs(char:children()) do pcall(function() if v.className == "Part" then v.CanCollide = false elseif v.ClassName == "Model" then v.Head.CanCollide = false end end) end end game:service("RunService").Stepped:wait() end
 end})
+
+
+Tab:AddButton({
+	Name = "Anti-AFK",
+	Callback = function()
+    repeat task.wait() until (game:IsLoaded());
+for i,v in pairs(getconnections(game:GetService('Players').LocalPlayer.Idled)) do
+    v:Disable();
+end;
+    end    
+})
 
 
 local Section = Tab:AddSection({
