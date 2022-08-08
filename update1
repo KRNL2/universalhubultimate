@@ -600,7 +600,7 @@ end
 Tab:AddButton({
 	Name = "Rainbow Left Leg [R6 Only]",
 	Callback = function()
-    -- Right Arm
+    -- Right Leg
     local ply = game.Players.LocalPlayer
     local chr = ply.Character
     local Left Leg = chr["Left Leg"]
@@ -614,7 +614,7 @@ end
 Tab:AddButton({
 	Name = "Rainbow Right Leg [R6 Only]",
 	Callback = function()
-    -- Right Arm
+    -- Right Leg
     local ply = game.Players.LocalPlayer
     local chr = ply.Character
     local Right Leg = chr["Right Leg"]
