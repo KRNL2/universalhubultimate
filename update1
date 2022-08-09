@@ -31,6 +31,10 @@
 -- Tower of Hell
 -- Raise a Floppa 2]
 -- Limited Words
+-- Car Crushers 2
+-- Brookhaven RP
+-- Bedwars
+-- Murder Mystery 2
 --]]
 
 
@@ -2750,6 +2754,101 @@ end
 })
 
 
+local Section = Tab:AddSection({
+	Name = "Car Crushers 2"
+})
+
+
+Tab:AddButton({
+	Name = "SoggyHub",
+	Callback = function()
+    loadstring(game:HttpGet("https://soggyhubv2.vercel.app"))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Car Crushers 2 Autofarm GUI #1",
+	Callback = function()
+    -- // Configuration: \\ --
+
+    shared.settings = {
+    ['DarkMode'] = true; -- Dark mode on the script itself.
+    ['AntiAfk'] = true; -- Enable anti-afk
+    ['CloseBind'] = Enum.KeyCode.Semicolon; -- Set this to your preferred key to close the menu.
+    }
+
+    -- // Loader: \\ --
+
+    loadstring(game:HttpGet('https://pastebin.com/raw/T7ERd3e8'))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "V.G Hub",
+	Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "saucekid's Car Crushers 2 Hub",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/saucekid/scripts/main/CarCrushers.lua"))()
+  	end    
+})
+
+
+local Section = Tab:AddSection({
+	Name = "Brookhaven RP"
+})
+
+
+Tab:AddButton({
+	Name = "Ice Hub",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+  	end    
+})
+
+
+local Section = Tab:AddSection({
+	Name = "Bedwars"
+})
+
+
+Tab:AddButton({
+	Name = "Vape GUI",
+	Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/loadstring'))()
+  	end    
+})
+
+
+local Section = Tab:AddSection({
+	Name = "Murder Mystery 2"
+})
+
+
+Tab:AddButton({
+	Name = "Eclipse Hub",
+	Callback = function()
+    getgenv().mainKey = "nil" local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Vynixu's MM2 Hub",
+	Callback = function()
+    loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
+  	end    
+})
+
+
+
 
 
 
@@ -2786,5 +2885,7 @@ Tab:AddButton({
 
 
 Tab:AddParagraph("UI Library","Huge thanks to Orion for the UI Library")
+
+Tab:AddParagraph("Suggestions","If you have any suggestions please message me on discord. 3wnd#8995.")
 
 OrionLib:Init()
