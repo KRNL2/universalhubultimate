@@ -29,7 +29,8 @@
 -- Flee the Facility
 -- Meepcity
 -- Tower of Hell
--- Raise a Floppa 2
+-- Raise a Floppa 2]
+-- Limited Words
 --]]
 
 
@@ -2720,6 +2721,31 @@ Tab:AddButton({
     _G.V3rmillion = true
  
     loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/raiseafloppa.lua"))()
+  	end    
+})
+
+
+local Section = Tab:AddSection({
+	Name = "Limited Words"
+})
+
+
+Tab:AddButton({
+	Name = "Auto Daily Spin",
+	Callback = function()
+    --Credits to 1 800 PAIN#0357 bc Wxer Softworks are fucking retards
+
+if fireproximityprompt then
+    game:GetService"RunService".RenderStepped:Connect(function()
+        for i,v in pairs(game.Workspace.Spin2Win:GetDescendants()) do
+            if v.Name == "Spin2Win" and v.ClassName == "Part" then
+                local s_position = v.Position
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(s_position)
+                fireproximityprompt(v.ProximityPrompt, 1)
+            end
+        end
+    end)
+end
   	end    
 })
 
