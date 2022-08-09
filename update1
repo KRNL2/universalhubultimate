@@ -19,6 +19,19 @@
 -- Also if there are any bugs, please report the bug(s) in my discord server.
 ]]
 
+-- [[
+-- Supported Games:
+-- Mining Simulator 2
+-- Da hood
+-- Cant Say the Word
+-- Pet Simulator X
+-- Southwest Florida Beta
+-- Flee the Facility
+-- Meepcity
+-- Tower of Hell
+-- Raise a Floppa 2
+--]]
+
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
@@ -2580,6 +2593,139 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://www.scriptblox.com/raw/Project-Meow_421"))()
   	end    
 })
+
+
+local Section = Tab:AddSection({
+	Name = "Southwest Florida Beta"
+})
+
+
+Tab:AddButton({
+	Name = "Southwest Florida Beta GUI (Eltoro v.27ia)",
+	Callback = function()
+    loadstring(game:HttpGet("https://cheatersoul.click/eltorohub.html"))()
+  	end    
+})
+
+
+local Section = Tab:AddSection({
+	Name = "Flee the Facility"
+})
+
+
+Tab:AddButton({
+	Name = "Flee the Facility GUI #1",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/khoaScript/scripts/master/flee-the-facility.lua"))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Flee the Facility GUI #2",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Drifty96/ftfgui/main/ftfgui", true))()
+  	end    
+})
+
+
+local Section = Tab:AddSection({
+	Name = "MeepCity"
+})
+
+
+Tab:AddButton({
+	Name = "Main MeepCity GUI",
+	Callback = function()
+    -- MeepCracked
+    -- made by evo
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/synolope/meepcracked/main/loader.lua'))()
+  	end    
+})
+
+
+local Section = Tab:AddSection({
+	Name = "Tower of Hell"
+})
+
+
+Tab:AddButton({
+	Name = "Tower of Hell GUI #1",
+	Callback = function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/BbVHjH56'))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Tower of Hell GUI #2",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/03koios/TowerOfHell/main/README.md"))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Pog Hub",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/03koios/TowerOfHell/main/README.md"))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Proxima Hub",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Proxima-Hub/main/Main.lua"))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "WeebGang's Tower of Hell GUI",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/iiProductionz/Floater-Scripts/main/WaifuEdition/Tower%20Of%20Hell"))()
+  	end    
+})
+
+
+local Section = Tab:AddSection({
+	Name = "Raise a Floppa 2"
+})
+
+
+Tab:AddButton({
+	Name = "Leo Hub",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/tip52/Leo-hub/main/loader.lua"))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "King Scripts",
+	Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/zReal-King/Raise-A-Floppa-2/main/Gui'))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "RIP's Raise a Floppa 2 GUI",
+	Callback = function()
+	--Script :
+    _G.RedGUI = true
+    _G.Theme = "Dark" -- Must disable or remove _G.RedGUI to use
+    --Themes: Light, Dark, Mocha, Aqua and Jester
+    _G.V3rmillion = true
+ 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/raiseafloppa.lua"))()
+  	end    
+})
+
+
+
+
 
 
 Tab:AddLabel("More coming soon!")
