@@ -801,6 +801,22 @@ Tab:AddButton({
     end
 })
 
+
+
+-- VisualWorks (Hats GUI...) -- 
+local Section = Tab:AddSection({
+	Name = "Other Hats/Accessories"
+})
+
+
+Tab:AddButton({
+	Name = "VisualWorks (Hats/Accessories GUI)",
+	Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/ForestIsPro/VisualWorks/main/FreeHats'))()
+  	end    
+})
+
+
 -- The rainbow body parts section --
 -- This section changes your body parts color to rainbow. --
 local Section = Tab:AddSection({
@@ -990,7 +1006,7 @@ local Tab = Window:MakeTab({
 
 
 local Section = Tab:AddSection({
-	Name = "Total Hubs/GUIs: 22"
+	Name = "Total Hubs/GUIs: 23"
 })
 
 Tab:AddParagraph("Read!","Some of these Hubs are outdated that's why they're free. If you want the best experience with hubs, Use Synapse X or Script Ware. Also Check their discord for the required hats!")
@@ -1206,6 +1222,15 @@ Tab:AddButton({
     loadstring(game:HttpGet('https://pastebin.com/raw/sZMn81tZ'))()
   	end    
 })
+
+
+Tab:AddButton({
+	Name = "VisualWorks (Hats/Accessories GUI)",
+	Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/ForestIsPro/VisualWorks/main/FreeHats'))()
+  	end    
+})
+
 
 
 local Tab = Window:MakeTab({
