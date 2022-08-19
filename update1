@@ -820,6 +820,276 @@ Tab:AddButton({
 })
 
 
+local Section = Tab:AddSection({
+	Name = "Avatar Animations"
+})
+
+
+
+	local buttons = script.Parent
+	local Animate = game.Players.LocalPlayer.Character:WaitForChild("Animate")
+	
+	game.Players.LocalPlayer.CharacterAdded:Connect(function()
+		Animate = game.Players.LocalPlayer.Character:WaitForChild("Animate")
+	end)
+
+
+Tab:AddButton({
+	Name = "Zombie [R15 Only]",
+	Callback = function()
+    		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616158929"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616160636"
+		Animate.walk:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=616168032"
+		Animate.run:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=616163682"
+		Animate.jump:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=616161997"
+		Animate.climb:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=616156119"
+		Animate.fall:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=616157476"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Astronaut [R15 Only]",
+	Callback = function()
+    		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=891621366"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=891633237"
+		Animate.walk:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=891667138"
+		Animate.run:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=891636393"
+		Animate.jump:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=891627522"
+		Animate.climb:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=891609353"
+		Animate.fall:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=891617961"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Bubbly [R15 Only]",
+	Callback = function()
+    		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=910004836"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=910009958"
+		Animate.walk:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=910034870"
+		Animate.run:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=910025107"
+		Animate.jump:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=910016857"
+		Animate.fall:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=910001910"
+		Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=910030921"
+		Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=910028158"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Cartoony [R15 Only]",
+	Callback = function()
+    		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=742637544"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=742638445"
+		Animate.walk:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=742640026"
+		Animate.run:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=742638842"
+		Animate.jump:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=742637942"
+		Animate.climb:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=742636889"
+		Animate.fall:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=742637151"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Elder [R15 Only]",
+	Callback = function()
+    		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=845397899"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=845400520"
+		Animate.walk:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=845403856"
+		Animate.run:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=845386501"
+		Animate.jump:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=845398858"
+		Animate.climb:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=845392038"
+		Animate.fall:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=845396048"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Knight [R15 Only]",
+	Callback = function()
+    		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=657595757"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=657568135"
+		Animate.walk:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=657552124"
+		Animate.run:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=657564596"
+		Animate.jump:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=658409194"
+		Animate.climb:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=658360781"
+		Animate.fall:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=657600338"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Levitation [R15 Only]",
+	Callback = function()
+    		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616006778"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616008087"
+		Animate.walk:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=616013216"
+		Animate.run:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=616010382"
+		Animate.jump:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=616008936"
+		Animate.climb:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=616003713"
+		Animate.fall:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=616005863"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Mage [R15 Only]",
+	Callback = function()
+    		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=707742142"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=707855907"
+		Animate.walk:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=707897309"
+		Animate.run:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=707861613"
+		Animate.jump:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=707853694"
+		Animate.climb:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=707826056"
+		Animate.fall:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=707829716"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Ninja [R15 Only]",
+	Callback = function()
+    		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=656117400"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=656118341"
+		Animate.walk:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=656121766"
+		Animate.run:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=656118852"
+		Animate.jump:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=656117878"
+		Animate.climb:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=656114359"
+		Animate.fall:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=656115606"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  	end    
+})
+
+
+
+Tab:AddButton({
+	Name = "Pirate [R15 Only]",
+	Callback = function()
+    		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=750781874"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=750782770"
+		Animate.walk:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=750785693"
+		Animate.run:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=750783738"
+		Animate.jump:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=750782230"
+		Animate.climb:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=750779899"
+		Animate.fall:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=750780242"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Robot [R15 Only]",
+	Callback = function()
+    		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616088211"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616089559"
+		Animate.walk:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=616095330"
+		Animate.run:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=616091570"
+		Animate.jump:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=616090535"
+		Animate.climb:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=616086039"
+		Animate.fall:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=616087089"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Stylish [R15 Only]",
+	Callback = function()
+    		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616136790"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616138447"
+		Animate.walk:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=616146177"
+		Animate.run:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=616140816"
+		Animate.jump:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=616139451"
+		Animate.climb:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=616133594"
+		Animate.fall:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=616134815"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "SuperHero [R15 Only]",
+	Callback = function()
+    		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616111295"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616113536"
+		Animate.walk:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=616122287"
+		Animate.run:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=616117076"
+		Animate.jump:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=616115533"
+		Animate.climb:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=616104706"
+		Animate.fall:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=616108001"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Toy [R15 Only]",
+	Callback = function()
+    		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=782841498"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=782845736"
+		Animate.walk:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=782843345"
+		Animate.run:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=782842708"
+		Animate.jump:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=782847020"
+		Animate.climb:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=782843869"
+		Animate.fall:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=782846423"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Vampire [R15 Only]",
+	Callback = function()
+    		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1083445855"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1083450166"
+		Animate.walk:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=1083473930"
+		Animate.run:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=1083462077"
+		Animate.jump:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=1083455352"
+		Animate.climb:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=1083439238"
+		Animate.fall:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=1083443587"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Werewolf [R15 Only]",
+	Callback = function()
+    		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1083195517"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1083214717"
+		Animate.walk:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=1083178339"
+		Animate.run:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=1083216690"
+		Animate.jump:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=1083218792"
+		Animate.climb:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=1083182000"
+		Animate.fall:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=1083189019"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Oldschool [R15 Only]",
+	Callback = function()
+    		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=5319828216"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=5319831086"
+		Animate.walk:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=5319847204"
+		Animate.run:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=5319844329"
+		Animate.jump:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=5319841935"
+		Animate.climb:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=5319816685"
+		Animate.fall:FindFirstChildWhichIsA("Animation").AnimationId = "http://www.roblox.com/asset/?id=5319839762"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  	end    
+})
+
 
 -- VisualWorks (Hats GUI...) -- 
 local Section = Tab:AddSection({
@@ -828,7 +1098,7 @@ local Section = Tab:AddSection({
 
 
 Tab:AddButton({
-	Name = "VisualWorks (Hats/Accessories GUI)",
+	Name = "VisualWorks (Hats/Accessories GUI) (NW)",
 	Callback = function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/ForestIsPro/VisualWorks/main/FreeHats'))()
   	end    
