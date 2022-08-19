@@ -225,6 +225,24 @@ end;
 })
 
 
+Tab:AddButton({
+	Name = "Find Current Position (F9)",
+	Callback = function()
+     function getCurrentPlayerPOS()
+        local player = game.Players.LocalPlayer;
+        if player.Character then 
+            return player.Character.HumanoidRootPart.Position
+        end
+        return false;
+    end
+    local currentPOS = getCurrentPlayerPOS();
+
+print(currentPOS)
+  	end    
+})
+
+
+
 local Section = Tab:AddSection({
 	Name = "Utility"
 })
@@ -3144,6 +3162,38 @@ end
 
 
 Tab:AddLabel("More coming soon!")
+
+
+-- New tab --
+-- 8/18/22 -- 
+local Tab = Window:MakeTab({
+	Name = "Game Teleporter",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+local Section = Tab:AddSection({
+	Name = "Game Teleports"
+})
+
+
+Tab:AddButton({
+	Name = "Da Hood [FIXING]",
+	Callback = function()
+    local TeleportService = game:GetService("TeleportService")
+ 
+local TeleportDestination = 2788229376
+ 
+local function onPartTouch(otherPart)
+ local player = game.Players:GetPlayerFromCharacter(otherPart.Parent)
+ if player then
+  TeleportService:Teleport(TeleportDestination, player)
+ end
+end
+  	end    
+})
+
 
 
 -- Credits tab -- 
