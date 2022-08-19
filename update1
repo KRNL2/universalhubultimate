@@ -2492,6 +2492,14 @@ Tab:AddButton({
 })
 
 
+Tab:AddButton({
+	Name = "Graphene Admin",
+	Callback = function()
+    pcall(function() loadstring(game:GetObjects("rbxassetid://10572164822")[1].Source)() end)
+  	end    
+})
+
+
 -- [[
 -- Game Hubs --
 -- This is where guis/hubs will be put here.
@@ -3174,23 +3182,164 @@ local Tab = Window:MakeTab({
 
 
 local Section = Tab:AddSection({
-	Name = "Game Teleports"
+	Name = "Normal Games"
 })
 
 
 Tab:AddButton({
-	Name = "Da Hood [FIXING]",
+	Name = "Da Hood",
 	Callback = function()
-    local TeleportService = game:GetService("TeleportService")
- 
-local TeleportDestination = 2788229376
- 
-local function onPartTouch(otherPart)
- local player = game.Players:GetPlayerFromCharacter(otherPart.Parent)
- if player then
-  TeleportService:Teleport(TeleportDestination, player)
- end
-end
+  game:GetService("TeleportService"):Teleport(2788229376, Player)
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Fencing",
+	Callback = function()
+  game:GetService("TeleportService"):Teleport(12109643, Player) 
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Mining Simulator 2",
+	Callback = function()
+  game:GetService("TeleportService"):Teleport(9551640993, Player)
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Ragdoll Engine",
+	Callback = function()
+  game:GetService("TeleportService"):Teleport(9848789324, Player)
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Limited Words",
+	Callback = function()
+  game:GetService("TeleportService"):Teleport(10001513103, Player)
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Car Crushers 2",
+	Callback = function()
+  game:GetService("TeleportService"):Teleport(654732683, Player)
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Brookhaven RP",
+	Callback = function()
+  game:GetService("TeleportService"):Teleport(4924922222, Player)
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Blox Fruits",
+	Callback = function()
+  game:GetService("TeleportService"):Teleport(2753915549, Player)
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "BedWars",
+	Callback = function()
+  game:GetService("TeleportService"):Teleport(6872265039, Player)
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Murder Mystery 2",
+	Callback = function()
+  game:GetService("TeleportService"):Teleport(142823291, Player)
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "DOORS️",
+	Callback = function()
+  game:GetService("TeleportService"):Teleport(6516141723, Player)
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "MeepCity",
+	Callback = function()
+  game:GetService("TeleportService"):Teleport(370731277, Player)
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Pet Simulator X",
+	Callback = function()
+  game:GetService("TeleportService"):Teleport(6284583030, Player)
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Build A Boat For Treasure",
+	Callback = function()
+  game:GetService("TeleportService"):Teleport(537413528, Player)
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Tower of Hell",
+	Callback = function()
+  game:GetService("TeleportService"):Teleport(1962086868, Player)
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "PLS DONATE",
+	Callback = function()
+  game:GetService("TeleportService"):Teleport(8737602449, Player)
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Arsenal",
+	Callback = function()
+  game:GetService("TeleportService"):Teleport(286090429, Player)
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Flee the Facility",
+	Callback = function()
+  game:GetService("TeleportService"):Teleport(893973440, Player)
+  	end    
+})
+
+
+
+local Section = Tab:AddSection({
+	Name = "Event Games"
+})
+
+
+Tab:AddButton({
+	Name = "Roblox Innovation Awards Voting Hub",
+	Callback = function()
+  game:GetService("TeleportService"):Teleport(9377039667, Player)
   	end    
 })
 
