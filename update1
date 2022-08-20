@@ -3642,7 +3642,7 @@ Tab:AddParagraph("Owner","Equinox Hub was made by Mr_BullFrog")
 
 
 Tab:AddButton({
-	Name = "Server Stat Icons",
+	Name = "Server Stats",
 	Callback = function()
     loadstring(game:HttpGet("https://pastebin.com/raw/qSQKxrkt", true))()
   	end    
