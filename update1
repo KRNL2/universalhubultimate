@@ -3476,22 +3476,10 @@ Tab:AddLabel("More coming soon!")
 -- New tab --
 -- 8/18/22 -- 
 -- Last Update was on 8/20/2022 at 2:05 PM -- 
-local Games = Window:MakeTab({Name = "Games Teleport", Icon = "rbxassetid://6034227061", PremiumOnly = false})
+local Games = Window:MakeTab({Name = "Game Teleporter", Icon = "rbxassetid://6034227061", PremiumOnly = false})
 local SectionTeleport = Games:AddSection({Name = "Choose Supported Game to Teleport!"})
 
-local player = game:GetService("Players").LocalPlayer
--- Useful Functions
-local function hasChar()
-    if player.Character and player.Character.Parent and player.Character.Parent.Parent and player.Character:FindFirstChild("HumanoidRootPart") then 
-        return true
-    end
-    return false
-end
-player.OnTeleport:Connect(function(State)
-    if State == Enum.TeleportState.Started then
-        syn.queue_on_teleport("repeat task.wait() until game:IsLoaded() loadstring(game:HttpGet('https://raw.githubusercontent.com/KRNL2/universalhubultimate/main/update1))()")
-    end
-end)
+
 
 
 _G.gamestoteleport = "Select game to teleport"
