@@ -35,6 +35,7 @@
 -- Brookhaven RP
 -- Bedwars
 -- Murder Mystery 2
+-- Arsenal
 --]]
 
 
@@ -3438,6 +3439,19 @@ end
 })
 
 
+local Section = Tab:AddSection({
+	Name = "Arsenal"
+})
+
+
+Tab:AddButton({
+	Name = "V.G Hub",
+	Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+  	end    
+})
+
+
 
 Tab:AddLabel("More coming soon!")
 
@@ -3627,6 +3641,8 @@ local Section = Tab:AddSection({
 	Name = "Credits"
 })
 
+Tab:AddLabel("Last Updated: 8/19/2022")
+
 
 Tab:AddParagraph("Owner","Equinox Hub was made by Mr_BullFrog")
 Tab:AddButton({
@@ -3646,5 +3662,9 @@ Tab:AddButton({
 Tab:AddParagraph("UI Library","Huge thanks to Orion for the UI Library")
 
 Tab:AddParagraph("Suggestions","If you have any suggestions please message me on discord. 3wnd#8995.")
+
+
+
+
 
 OrionLib:Init()
