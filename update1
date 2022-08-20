@@ -57,7 +57,7 @@ CloseCallback = <function> - Function to execute when the window is closed.
 
 local Tab = Window:MakeTab({
 	Name = "Local",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://6031094686",
 	PremiumOnly = false
 })
 
@@ -371,7 +371,7 @@ Tab:AddButton({
 
 local Tab = Window:MakeTab({
 	Name = "Character",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://6034287594",
 	PremiumOnly = false
 })
 
@@ -1298,7 +1298,7 @@ end
 
 local Tab = Window:MakeTab({
 	Name = "Hubs and GUIs",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://6031086173",
 	PremiumOnly = false
 })
 
@@ -1533,7 +1533,7 @@ Tab:AddButton({
 
 local Tab = Window:MakeTab({
 	Name = "FE Scripts",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://6026568213",
 	PremiumOnly = false
 })
 
@@ -2483,7 +2483,7 @@ Tab:AddButton({
 -- Animations --
 local Tab = Window:MakeTab({
 	Name = "Animations",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://6034754448",
 	PremiumOnly = false
 })
 
@@ -2722,7 +2722,7 @@ humanoid.Died:Connect(function() tc:Disconnect() end)
 -- Admins --
 local Tab = Window:MakeTab({
 	Name = "Admins",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://6031265978",
 	PremiumOnly = false
 })
 
@@ -2780,6 +2780,14 @@ Tab:AddButton({
 })
 
 
+Tab:AddButton({
+	Name = "Homebrew Admin",
+	Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/mgamingpro/HomebrewAdmin/master/Main'))()
+  	end    
+})
+
+
 -- [[
 -- Game Hubs --
 -- This is where guis/hubs will be put here.
@@ -2787,7 +2795,7 @@ Tab:AddButton({
 
 local Tab = Window:MakeTab({
 	Name = "Game Hubs",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://6022668907",
 	PremiumOnly = false
 })
 
@@ -3469,7 +3477,7 @@ Tab:AddLabel("More coming soon!")
 -- 8/18/22 -- 
 local Tab = Window:MakeTab({
 	Name = "Game Teleporter",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://6034227061",
 	PremiumOnly = false
 })
 
@@ -3641,7 +3649,7 @@ Tab:AddButton({
 -- Credits tab -- 
 local Tab = Window:MakeTab({
 	Name = "Credits",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://6034287513",
 	PremiumOnly = false
 })
 
@@ -3650,7 +3658,7 @@ local Section = Tab:AddSection({
 	Name = "Credits"
 })
 
-Tab:AddLabel("Last Updated: 8/19/2022")
+Tab:AddLabel("Last Updated: 8/20/2022")
 
 
 Tab:AddParagraph("Owner","Equinox Hub was made by Mr_BullFrog")
