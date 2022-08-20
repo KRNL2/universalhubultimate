@@ -339,6 +339,15 @@ Tab:AddButton({
 })
 
 
+Tab:AddButton({
+	Name = "Server Stat Icons",
+	Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/qSQKxrkt", true))()
+  	end    
+})
+
+
+
 local Section = Tab:AddSection({
 	Name = "Graphics"
 })
@@ -3645,6 +3654,16 @@ Tab:AddLabel("Last Updated: 8/19/2022")
 
 
 Tab:AddParagraph("Owner","Equinox Hub was made by Mr_BullFrog")
+
+
+Tab:AddButton({
+	Name = "Server Stat Icons",
+	Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/qSQKxrkt", true))()
+  	end    
+})
+
+
 Tab:AddButton({
 	Name = "Click to copy discord Invite",
 	Callback = function()
