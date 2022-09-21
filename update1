@@ -36,6 +36,7 @@
 -- Bedwars
 -- Murder Mystery 2
 -- Arsenal
+-- Doors V
 --]]
 
 
@@ -6137,6 +6138,14 @@ Tab:AddButton({
 	Name = "V.G Hub",
 	Callback = function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Doors V",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/OminousVibes-Exploit/Scripts/main/doors/main.lua"))()
   	end    
 })
 
